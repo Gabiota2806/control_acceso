@@ -9,10 +9,10 @@ class SensorController extends Controller
 {
     public function trigger(Request $request)
     {
-        // Validación básica según el contrato de API
+        // Validación básica según el contrato de API actualizado para RFID
         $validated = $request->validate([
             'device_id' => 'required|string',
-            'sensor_status' => 'required|string',
+            'card_uid'  => 'required|string',
         ]);
 
         // TODO: En la Fase 2/3 (cuando Guillermo termine los modelos)

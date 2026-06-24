@@ -30,13 +30,15 @@ while True:
             # Leer la línea, decodificarla y quitar saltos de línea
             mensaje = arduino.readline().decode('utf-8').strip()
             
-            if mensaje == "DETECTADO":
-                print("\n👤 ¡Persona detectada por el sensor!")
+            # Verificar si el mensaje empieza con "UID:" (formato enviado por Arduino)
+            if mensaje.startswith("UID:"):
+                card_uid = mensaje.split(":")[1]
+                print(f"\n💳 ¡Tarjeta leída! UID: {card_uid}")
                 print("🌐 Enviando petición POST a la API de Laravel...")
                 
                 payload = {
                     "device_id": "ARDUINO_UNO_PUERTA_PRINCIPAL",
-                    "sensor_status": "triggered"
+                    "card_uid": card_uid
                 }
                 
                 headers = {
