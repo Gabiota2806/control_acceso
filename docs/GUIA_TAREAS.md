@@ -28,11 +28,11 @@ Este documento sirve como la fuente de verdad del estado del proyecto.
 ### Fase 2: Lógica Corporativa y de Integración (🏃 En Progreso)
 - [ ] (Guillermo) Migraciones y CRUD completo de `Visitor` y `Destination` (Sistema Corporativo Core).
 - [x] (Gabriel) Programar `SensorController` para que guarde el acceso (Mockeado por ahora).
-- [ ] (Gabriel) Proveer Endpoint de Enrolamiento (HaaS) para que el Gimnasio vincule nuevas tarjetas sin tipeo manual.
+- [x] (Gabriel) Proveer Endpoint de Enrolamiento (HaaS) para que el Gimnasio vincule nuevas tarjetas sin tipeo manual.
 
-### Fase 3: Dashboard Reactivo y Roles (Pendiente)
-- [ ] (Sebastián) Implementar Roles (Admin, Seguridad) mediante Middleware.
-- [ ] (Sebastián) Crear Dashboard de Auditoría en tiempo real con **Livewire**.
+### Fase 3: Dashboard Reactivo y Roles (🏃 En Progreso)
+- [x] (Sebastián) Implementar Roles (Admin, Seguridad) mediante Middleware.
+- [x] (Sebastián) Crear Dashboard de Auditoría en tiempo real con **Livewire**.
 - [ ] (Alexia) Aplicar diseño profesional (Tailwind) a las tablas del Dashboard.
 
 ### Fase 4: Entrega (6 de Julio)
