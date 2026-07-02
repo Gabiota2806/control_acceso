@@ -6,7 +6,7 @@ import requests
 # Cambia esto por el puerto de tu Arduino. 
 # En Windows suele ser 'COM3', 'COM4', etc.
 # En Linux suele ser '/dev/ttyACM0' o '/dev/ttyUSB0'
-PUERTO_SERIAL = '/dev/ttyACM0' 
+PUERTO_SERIAL = '/dev/ttyUSB0' 
 BAUD_RATE = 9600
 
 # La URL de tu proyecto Laravel corriendo en local
