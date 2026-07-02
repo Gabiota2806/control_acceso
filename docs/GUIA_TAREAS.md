@@ -13,6 +13,9 @@ Este documento sirve como la fuente de verdad del estado del proyecto.
 * **Flujo:** Nuestro Arduino lee la tarjeta -> Laravel consulta la API del Gimnasio (Estado de Pago) -> Laravel abre/cierra la puerta y guarda el registro en nuestra BD -> Opcionalmente, le devuelve al Gimnasio un reporte de accesos.
 * **Módulos:** Esta integración actuará como un "módulo" dentro de nuestro robusto sistema corporativo principal.
 
+## 📜 Historial de Cambios de Alcance
+* **[02/07/2026] Evolución de API del Gimnasio:** Inicialmente el gimnasio iba a consumir nuestro historial completo de accesos. Tras revisar la UX (Experiencia de Usuario), se decidió pivotar la arquitectura a un modelo de **Hardware-as-a-Service (HaaS)**. Ahora les proveeremos un *Endpoint de Enrolamiento* (`/api/gym/latest-scan`) para que su sistema atrape el UID escaneado en tiempo real y no tengan que tipearlo manualmente.
+
 ---
 
 ## 🗺️ Tareas del Proyecto (Para revisar constantemente)
@@ -24,8 +27,8 @@ Este documento sirve como la fuente de verdad del estado del proyecto.
 
 ### Fase 2: Lógica Corporativa y de Integración (🏃 En Progreso)
 - [ ] (Guillermo) Migraciones y CRUD completo de `Visitor` y `Destination` (Sistema Corporativo Core).
-- [ ] (Gabriel) Programar `SensorController` para que haga la petición de estado de pago al Gimnasio.
-- [ ] (Gabriel) Proveer el endpoint de la API para que el Gimnasio consulte sus ingresos.
+- [x] (Gabriel) Programar `SensorController` para que guarde el acceso (Mockeado por ahora).
+- [ ] (Gabriel) Proveer Endpoint de Enrolamiento (HaaS) para que el Gimnasio vincule nuevas tarjetas sin tipeo manual.
 
 ### Fase 3: Dashboard Reactivo y Roles (Pendiente)
 - [ ] (Sebastián) Implementar Roles (Admin, Seguridad) mediante Middleware.
