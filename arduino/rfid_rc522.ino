@@ -21,7 +21,16 @@ MFRC522 mfrc522(SS_PIN, RST_PIN);  // Crear la instancia del lector
 void setup() {
   Serial.begin(9600);   // Iniciar puerto serial para hablar con la PC
   SPI.begin();          // Iniciar bus SPI
+  
+  Serial.println("--- Diagnóstico de Inicio ---");
+  Serial.println("Iniciando MFRC522...");
   mfrc522.PCD_Init();   // Inicializar el lector MFRC522
+  
+  // Imprimir versión del firmware del módulo RFID para verificar conexión
+  mfrc522.PCD_DumpVersionToSerial();
+  
+  Serial.println("Lector listo. Acerca una tarjeta...");
+  Serial.println("-----------------------------");
 }
 
 void loop() {
