@@ -15,11 +15,18 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        // User::factory(10)->create();
+        User::create([
+            'name' => 'Administrador',
+            'email' => 'admin@test.com',
+            'password' => \Illuminate\Support\Facades\Hash::make('password'),
+            'role' => 'admin',
+        ]);
 
-        User::factory()->create([
-            'name' => 'Test User',
-            'email' => 'test@example.com',
+        User::create([
+            'name' => 'Guardia de Seguridad',
+            'email' => 'seguridad@test.com',
+            'password' => \Illuminate\Support\Facades\Hash::make('password'),
+            'role' => 'seguridad',
         ]);
     }
 }
