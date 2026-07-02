@@ -2,11 +2,11 @@
 
 Este documento sirve como la fuente de verdad del estado del proyecto.
 
-## 👥 Roles Actualizados
-* **Gabriel Pineda**: Hardware (RFID), APIs Cruzadas, y absorción de tareas de Sebastián (Livewire, Roles, Dashboard).
-* **Guillermo Bordón**: Lógica Corporativa (CRUD de `Visitor`, `Destination`) y BD.
-* **Alexia Saucedo**: Frontend, UI/UX (Tailwind), Vistas estáticas.
-* *(Sebastián Roda: Ausente por licencia).*
+## 👥 Roles
+* **Gabriel Pineda**: Liderazgo Técnico, Hardware (RFID), y APIs Cruzadas.
+* **Guillermo Bordón**: Lógica Corporativa (CRUD de `Visitor`, `Destination`) y Base de Datos.
+* **Alexia Saucedo**: Frontend, Diseño UI/UX (Tailwind), Vistas estáticas.
+* **Sebastián Roda**: Sistema de Roles, Alertas y Dashboard en tiempo real (Livewire).
 
 ## 🏗️ Arquitectura de la API del Gimnasio
 * **Objetivo:** El gimnasio solo necesita saber si el cliente pagó o no la cuota.
@@ -28,8 +28,8 @@ Este documento sirve como la fuente de verdad del estado del proyecto.
 - [ ] (Gabriel) Proveer el endpoint de la API para que el Gimnasio consulte sus ingresos.
 
 ### Fase 3: Dashboard Reactivo y Roles (Pendiente)
-- [ ] (Gabriel) Implementar Roles (Admin, Seguridad) mediante Middleware.
-- [ ] (Gabriel) Crear Dashboard de Auditoría en tiempo real con **Livewire**.
+- [ ] (Sebastián) Implementar Roles (Admin, Seguridad) mediante Middleware.
+- [ ] (Sebastián) Crear Dashboard de Auditoría en tiempo real con **Livewire**.
 - [ ] (Alexia) Aplicar diseño profesional (Tailwind) a las tablas del Dashboard.
 
 ### Fase 4: Entrega (6 de Julio)
