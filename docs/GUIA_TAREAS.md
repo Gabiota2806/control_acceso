@@ -33,7 +33,11 @@ Este documento sirve como la fuente de verdad del estado del proyecto.
 ### Fase 3: Dashboard Reactivo y Roles (🏃 En Progreso)
 - [x] (Sebastián) Implementar Roles (Admin, Seguridad) mediante Middleware.
 - [x] (Sebastián) Crear Dashboard de Auditoría en tiempo real con **Livewire**.
-- [ ] (Alexia) Aplicar diseño profesional (Tailwind) a las tablas del Dashboard.
+### Fase 3: Frontend Avanzado, UI/UX y Vistas (🏃 En Progreso)
+- [ ] (Alexia) **CRUD Corporativo:** Diseñar (maquetar) los formularios HTML y tablas para Visitantes y Destinos.
+- [ ] (Alexia) **Perfiles del Equipo:** Desarrollar la vista estática "Sobre Nosotros" (Requisito obligatorio).
+- [ ] (Alexia) **Landing Page:** Rediseñar `welcome.blade.php` como una página de inicio corporativa.
+- [ ] (Alexia) **Dashboard Real-Time:** Aplicar Tailwind CSS y colores a la tabla de accesos en vivo (archivo `access-dashboard.blade.php`).
 
 ### Fase 4: Entrega (6 de Julio)
 - [ ] (Todos) Pruebas E2E: Tarjeta Física -> Validación de Pago -> Reflejo en Livewire.
