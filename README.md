@@ -3,15 +3,18 @@
 Bienvenido al repositorio del Sistema de Control de Accesos. Este proyecto nace como una solución para registrar, validar y auditar el ingreso de personas ajenas a un establecimiento, controlando el tiempo límite de permanencia de cada visitante.
 
 ## 🚀 Características Principales
-- **Roles y Permisos:** Accesos diferenciados para el Administrador, personal de Seguridad y Empleados regulares.
+- **Esqueleto Base:** Layout principal del sistema preparado con una vista pública y una vista interna para usuarios autenticados.
+- **Sidebar de Panel Interno:** Menú lateral para usuarios logueados con accesos base a Dashboard, Reportes, Registro de Accesos y Usuarios.
+- **Roles y Permisos:** Estructura pensada para diferenciar accesos de Administrador, personal de Seguridad y Empleados regulares.
 - **Auditoría Reactiva:** Dashboard en tiempo real construido con **Livewire**, permitiendo monitorear los accesos sin recargar la página.
 - **Control de Tiempo:** Alertas automáticas para usuarios que han excedido su tiempo permitido dentro del establecimiento.
 - **Hardware Integrado:** Conexión vía API con un **Arduino y un sensor de proximidad** para detectar ingresos físicamente y reportarlos al sistema de manera instantánea.
 
 ## 🛠️ Stack Tecnológico
 - **Framework:** Laravel 11
-- **Frontend:** Laravel Breeze (Blade + Livewire + Tailwind CSS)
+- **Frontend:** Blade + Livewire + Tailwind CSS
 - **Base de Datos:** SQLite
+- **Herramientas de Build:** Vite
 - **Hardware:** Arduino (C++)
 - **Lenguaje:** PHP 8.2+
 
